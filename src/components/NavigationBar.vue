@@ -18,5 +18,7 @@ export default {
 </script>
 
 <style lang="scss">
-  
+  .navigation {
+		border-bottom: solid 2px var(--gray-blue-grey-blue-95, #edeff2);
+	}
 </style>
