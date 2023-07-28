@@ -13,8 +13,7 @@
 <script>
 
 import IconButton from '@/components/UI/IconButton.vue'
-import { burgerIcon } from '@/assets/js/icons.js';
-
+import { burgerIcon } from '@/assets/js/icons.js'
 import NavigationMenu from '@/components/NavigationMenu.vue'
 
 export default {

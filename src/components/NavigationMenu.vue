@@ -52,9 +52,5 @@ export default {
 			color: var(--gray-blue-grey-blue-70, #7d8fb3);
 			font: var(--bold-bold-13, 700 13px/25px "Roboto", sans-serif);
 		}
-
-		&__ellipsis-menu {
-			background-color: transparent;
-		}
 	}
 </style>
