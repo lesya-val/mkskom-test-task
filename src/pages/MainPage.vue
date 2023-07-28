@@ -1,18 +1,18 @@
 <template>
-	<div class="main-page">
-		
-	</div>
+  <div class="main-page">
+    <NavigationBar/>
+  </div>
 </template>
 
 <script>
 
-
+import NavigationBar from '@/components/NavigationBar.vue'
 
 export default {
-	name: 'App',
-	components: {
-		
-	}
+  name: 'App',
+  components: {
+    NavigationBar,
+  }
 }
 </script>
 
