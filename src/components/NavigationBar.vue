@@ -5,7 +5,7 @@
 				<IconButton class="navigation__icon-button" :iconButton="burger"/>
 				<h1 class="navigation__title">Constructor</h1>
 			</div>
-			<NavigationMenu
+			<MenuList
 				:ellipsisMenu="ellipsis"
 			/>
 			<div class="navigation__input">
@@ -15,7 +15,17 @@
 					:iconAfter="arrow"
 				/>
 			</div>
-			<NavigationInfo/>
+			<div class="navigation__info">
+				<UserInfo :iconUser="user"/>
+				<div class="navigation__control-btns">
+					<IconButton
+					:iconButton="bell"
+					/>
+					<IconButton
+						:iconButton="close"
+					/>
+				</div>
+			</div>
 		</div>
   </div>
 </template>
@@ -23,15 +33,18 @@
 <script>
 
 import IconButton from '@/components/UI/IconButton.vue'
-import NavigationMenu from '@/components/Navigation/NavigationMenu.vue'
+import MenuList from '@/components/MenuList.vue'
 import InputSearch from '@/components/UI/InputSearch.vue'
-import NavigationInfo from '@/components/Navigation/NavigationInfo.vue'
+import UserInfo from '@/components/UserInfo.vue'
 
 import { 
 	burger,
 	search,
 	arrow,
 	ellipsis,
+	user,
+	bell,
+	close,
 } 
 
 from '@/assets/js/icons.js'
@@ -40,9 +53,9 @@ export default {
 	name: "NavigationBar",
 	components: {
 		IconButton,
-		NavigationMenu,
+		MenuList,
 		InputSearch,
-		NavigationInfo,
+		UserInfo,
 	},
 	data() {
 		return {
@@ -50,6 +63,9 @@ export default {
 			search: search,
 			arrow: arrow,
 			ellipsis: ellipsis,
+			user: user,
+			bell: bell,
+			close: close,
 			currentPlaceholder: "Search Transactions and Documents",
 		}
 	}

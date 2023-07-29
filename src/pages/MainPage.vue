@@ -6,7 +6,7 @@
 
 <script>
 
-import NavigationBar from '@/components/Navigation/NavigationBar.vue'
+import NavigationBar from '@/components/NavigationBar.vue'
 
 export default {
   name: 'App',

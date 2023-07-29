@@ -1,7 +1,7 @@
 <template>
-	<div class="navigation__user">
+	<div class="user">
 		<span v-html="iconUser" />
-		<h2 class="navigation__user-name">Clayton Santos</h2>
+		<h2 class="user__name">Clayton Santos</h2>
 	</div>
 </template>
 

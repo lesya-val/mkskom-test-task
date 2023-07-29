@@ -1,11 +1,9 @@
-.navigation {
-	&__user {
+.user {
 		display: flex;
 		align-items: center;
 		gap: 15px;
-	}
 
-	&__user-name {
+	&__name {
 		color: var(--gray-blue-grey-blue-60, #6b7a99);
 		font: var(--bold-bold-13, 700 13px/25px "Roboto", sans-serif);
 	}
