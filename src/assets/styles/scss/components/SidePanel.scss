@@ -1,0 +1,20 @@
+.side-panel {
+	display: flex;
+	flex-direction: column;
+	padding: 30px 25px;
+	border-right: 2px solid var(--gray-blue-grey-blue-95, #edeff2);
+	justify-content: space-between;
+	row-gap: 50px;
+
+	&__btns {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	&__avatars {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+}

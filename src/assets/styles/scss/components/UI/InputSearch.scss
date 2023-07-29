@@ -1,0 +1,22 @@
+.input-search{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+	width: 100%;
+	height: 30px;
+
+	&__icon-input {
+		display: flex;
+		gap: 10px;
+	}
+
+	&__input {
+		width: 200px;
+	}
+
+	&__input::placeholder {
+		color: var(--gray-blue-grey-blue-80, #adb8cc);
+		font: var(--bold-bold-12, 700 12px/20px "Roboto", sans-serif);
+	}
+}

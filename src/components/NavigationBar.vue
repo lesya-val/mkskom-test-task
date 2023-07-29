@@ -19,7 +19,7 @@
 				<UserInfo :iconUser="user"/>
 				<div class="navigation__control-btns">
 					<IconButton
-					:iconButton="bell"
+						:iconButton="bell"
 					/>
 					<IconButton
 						:iconButton="close"

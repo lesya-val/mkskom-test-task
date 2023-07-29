@@ -2,18 +2,30 @@
 @import 'variables.scss';
 @import 'fonts.scss';
 
-// Стили для всего приложения
-#app {
+
+body {
 	background: var(--gray-blue-grey-blue-98, #f7f8fa);
-	max-width: 1600px;
-	height: 100%;
-	margin: 0 auto;
 
 	color: var(--gray-blue-grey-blue-60, #6b7a99);
 	font: var(--bold-bold-12, 700 12px/20px "Roboto", sans-serif);
 }
 
+#app {
+	height: 100vh;
+}
+
+// Стили для страниц
+@import '../scss/pages/MainPage.scss';
+
+
 // Стили для компонентов
 @import '../scss/components/NavigationBar.scss';
 @import '../scss/components/MenuList.scss';
 @import '../scss/components/UserInfo.scss';
+@import '../scss/components/SidePanel.scss';
+@import '../scss/components/AvatarItem.scss';
+
+
+// Стили для UI-компонентов
+@import '../scss/components/UI/IconButton.scss';
+@import '../scss/components/UI/InputSearch.scss';
