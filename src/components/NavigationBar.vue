@@ -1,30 +1,57 @@
 <template>
   <div class="navigation">
 		<div class="navigation__content">
-		<div class="navigation__logo">
-			<IconButton class="navigation__icon-button" :icon="burgerIcon"/>
-			<h1 class="navigation__title">Constructor</h1>
+			<div class="navigation__logo">
+				<IconButton class="navigation__icon-button" :icon="burgerIcon"/>
+				<h1 class="navigation__title">Constructor</h1>
+			</div>
+			<NavigationMenu/>
+			<div class="navigation__input">
+				<InputSearch
+					class="navigation__input-input" 
+					:currentPlaceholder = currentPlaceholder
+					:iconBefore = "search"
+					:iconAfter="arrow"
+				/>
+			</div>
+
+			<div class="navigation__input">
+				<InputSearch
+					class="navigation__input-input"
+					:iconBefore = "search"
+				/>
+			</div>
 		</div>
-		<NavigationMenu/>
-	</div>
   </div>
 </template>
 
 <script>
 
 import IconButton from '@/components/UI/IconButton.vue'
-import { burgerIcon } from '@/assets/js/icons.js'
 import NavigationMenu from '@/components/NavigationMenu.vue'
+import InputSearch from '@/components/UI/InputSearch.vue'
+
+import { 
+	burgerIcon,
+	search,
+	arrow,
+} 
+
+from '@/assets/js/icons.js'
 
 export default {
 	name: "NavigationBar",
 	components: {
 		IconButton,
 		NavigationMenu,
+		InputSearch,
 	},
 	data() {
 		return {
 			burgerIcon: burgerIcon,
+			search: search,
+			arrow: arrow,
+			currentPlaceholder: "Search Transactions and Documents",
 		}
 	}
 };
@@ -53,6 +80,17 @@ export default {
 		&__title {
 			color: var(--gray-blue-grey-blue-50, #4d5e80);
 			font: var(--bold-bold-18, 700 18px/30px "Roboto", sans-serif);
+		}
+
+		&__input {
+			display: flex;
+			align-items: center;
+			background: var(--white-white, #ffffff);
+			border-radius: 30px ;
+			border: 2px solid var(--gray-blue-grey-blue-97, #f5f6f7);
+			padding: 20px 15px;
+			width: 430px;
+			height: 50px;
 		}
 	}
 </style>
