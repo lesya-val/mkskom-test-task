@@ -6,9 +6,10 @@
 				class="input-search__input"
 				type="text"
 				:placeholder="currentPlaceholder"
+				@input="handleInput"
 			>
 		</div>
-		<button v-if="iconAfter" v-html="iconAfter"></button>
+		<button v-if="iconAfter" v-html="iconAfter" type="submit"></button>
 	</div>
 </template>
 
@@ -34,6 +35,12 @@ export default {
       default: () => ({}),
 		}
   },
+	methods: {
+		handleInput(event) {
+			const inputValue = event.target.value;
+			event.target.value = inputValue.replace(/\D/g, "");
+		},
+	},
 };
 
 </script>
