@@ -11,7 +11,7 @@
 
 <script>
 
-import IconButton from './UI/IconButton.vue';
+import IconButton from '@/components/UI/IconButton.vue';
 
 import {
 	bell,
@@ -33,12 +33,3 @@ export default {
 };
 
 </script>
-
-<style lang="scss">
-	.navigation {
-		&__control {
-			display: flex;
-			gap: 10px;
-		}
-	}
-</style>

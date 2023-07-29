@@ -9,8 +9,8 @@
 
 <script>
 
-import NavigationUser from './NavigationUser.vue'
-import NavigationControl from './NavigationControl.vue'
+import NavigationUser from '@/components/Navigation/NavigationUser.vue'
+import NavigationControl from '@/components/Navigation/NavigationControl.vue'
 
 import { 
 	user,
@@ -32,12 +32,3 @@ export default {
 };
 
 </script>
-
-<style lang="scss">
-	.navigation {
-		&__info {
-			display: flex;
-			gap: 30px;
-		}
-	}
-</style>

@@ -24,24 +24,3 @@ export default {
 };
 
 </script>
-
-<style lang="scss">
-	.navigation {
-		&__menu {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			column-gap: 25px;
-		}
-
-		&__list {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			column-gap: 25px;
-
-			color: var(--gray-blue-grey-blue-70, #7d8fb3);
-			font: var(--bold-bold-13, 700 13px/25px "Roboto", sans-serif);
-		}
-	}
-</style>
