@@ -2,25 +2,20 @@
   <div class="navigation">
 		<div class="navigation__content">
 			<div class="navigation__logo">
-				<IconButton class="navigation__icon-button" :icon="burgerIcon"/>
+				<IconButton class="navigation__icon-button" :iconButton="burger"/>
 				<h1 class="navigation__title">Constructor</h1>
 			</div>
-			<NavigationMenu/>
+			<NavigationMenu
+				:ellipsisMenu="ellipsis"
+			/>
 			<div class="navigation__input">
 				<InputSearch
-					class="navigation__input-input" 
 					:currentPlaceholder = currentPlaceholder
 					:iconBefore = "search"
 					:iconAfter="arrow"
 				/>
 			</div>
-
-			<div class="navigation__input">
-				<InputSearch
-					class="navigation__input-input"
-					:iconBefore = "search"
-				/>
-			</div>
+			<NavigationInfo/>
 		</div>
   </div>
 </template>
@@ -30,11 +25,13 @@
 import IconButton from '@/components/UI/IconButton.vue'
 import NavigationMenu from '@/components/NavigationMenu.vue'
 import InputSearch from '@/components/UI/InputSearch.vue'
+import NavigationInfo from '@/components/NavigationInfo.vue'
 
 import { 
-	burgerIcon,
+	burger,
 	search,
 	arrow,
+	ellipsis,
 } 
 
 from '@/assets/js/icons.js'
@@ -45,12 +42,14 @@ export default {
 		IconButton,
 		NavigationMenu,
 		InputSearch,
+		NavigationInfo,
 	},
 	data() {
 		return {
-			burgerIcon: burgerIcon,
+			burger: burger,
 			search: search,
 			arrow: arrow,
+			ellipsis: ellipsis,
 			currentPlaceholder: "Search Transactions and Documents",
 		}
 	}

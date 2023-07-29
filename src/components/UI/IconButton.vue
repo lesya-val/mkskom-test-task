@@ -8,24 +8,24 @@
 export default {
   name: "IconButton",
   props: {
-    icon: {
+    iconButton: {
       type: String,
       required: true,
     },
   },
   data() {
     return {
-      currentIcon: this.icon,
+      currentIcon: this.iconButton,
       isColored: false,
     };
   },
   methods: {
     toggleColor() {
       this.isColored = !this.isColored;
-      this.currentIcon = this.isColored ? this.getColoredIcon() : this.icon;
+      this.currentIcon = this.isColored ? this.getColoredIcon() : this.iconButton;
     },
     getColoredIcon() {
-      return this.icon.replace(/fill="#C3CAD9"/g, 'fill="#FF6633"');
+      return this.iconButton.replace(/fill="#C3CAD9"/g, 'fill="#FF6633"');
     },
   },
 };
