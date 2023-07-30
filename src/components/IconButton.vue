@@ -4,7 +4,9 @@
 		type="button" 
 		@click="toggleColor">
 
-		<img :src="iconButton" alt="Icon">
+		<span
+			v-html="iconButton">
+		</span>
   </button>
 </template>
 

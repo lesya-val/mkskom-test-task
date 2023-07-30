@@ -1,6 +1,8 @@
 <template>
   <div class="icon-social">
-		<img :src="iconSocial" alt="Social">
+		<span 
+			v-html="iconSocial">
+		</span>
   </div>
 </template>
 

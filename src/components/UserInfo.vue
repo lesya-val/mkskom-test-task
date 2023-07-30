@@ -1,7 +1,9 @@
 <template>
 	<div class="user">
 		<div class="user__img">
-			<img :src="iconUser" alt="User">
+			<span
+				v-html="iconUser">
+			</span>
 		</div>
 		<h2 class="user__name">{{ name }}</h2>
 	</div>

@@ -1,7 +1,9 @@
 <template>
   <div class="menu-item">
 		<div class="menu-item__icon">
-			<img :src="itemIcon" alt="Icon">
+			<span
+				v-html="itemIcon">
+			</span>
 		</div>
 		<h3 class="menu-item__title">{{ title }}</h3>
   </div>

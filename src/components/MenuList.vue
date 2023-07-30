@@ -8,7 +8,9 @@
 			<li class="menu__item">Contacts</li>
 		</ul>
 		<button>
-			<img :src="ellipsisMenu" alt="Icon">
+			<span
+				v-html="ellipsisMenu">
+			</span>
 		</button>
 	</nav>
 </template>
