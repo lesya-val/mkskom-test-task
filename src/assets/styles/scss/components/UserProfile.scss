@@ -1,0 +1,15 @@
+.user-profile {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 145px;
+	padding: 30px 60px;
+	width: 360px;
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+	}
+}

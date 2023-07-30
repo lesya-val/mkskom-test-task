@@ -19,13 +19,15 @@ body {
 
 
 // Стили для компонентов
+@import '../scss/components/IconButton.scss';
+@import '../scss/components/InputSearch.scss';
 @import '../scss/components/NavigationBar.scss';
 @import '../scss/components/MenuList.scss';
 @import '../scss/components/UserInfo.scss';
 @import '../scss/components/SidePanel.scss';
 @import '../scss/components/AvatarItem.scss';
-
-
-// Стили для UI-компонентов
-@import '../scss/components/UI/IconButton.scss';
-@import '../scss/components/UI/InputSearch.scss';
+@import '../scss/components/UserProfile.scss';
+@import '../scss/components/ProfileCard.scss';
+@import '../scss/components/BlockMenu.scss';
+@import '../scss/components/MenuItem.scss';
+@import '../scss/components/SocialMedia.scss';

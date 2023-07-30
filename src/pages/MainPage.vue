@@ -13,13 +13,15 @@
 
 import NavigationBar from '@/components/NavigationBar.vue'
 import SidePanel from '@/components/SidePanel.vue'
+import UserProfile from '@/components/UserProfile.vue'
 
 
 export default {
-  name: 'App',
+  name: 'MainPage',
   components: {
     NavigationBar,
 		SidePanel,
+		UserProfile,
   }
 }
 </script>

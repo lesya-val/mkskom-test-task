@@ -32,9 +32,9 @@
 
 <script>
 
-import IconButton from '@/components/UI/IconButton.vue'
+import IconButton from '@/components/IconButton.vue'
 import MenuList from '@/components/MenuList.vue'
-import InputSearch from '@/components/UI/InputSearch.vue'
+import InputSearch from '@/components/InputSearch.vue'
 import UserInfo from '@/components/UserInfo.vue'
 
 import { 

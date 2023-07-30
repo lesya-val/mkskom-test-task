@@ -42,7 +42,7 @@
 
 <script>
 
-import IconButton from '@/components/UI/IconButton.vue';
+import IconButton from '@/components/IconButton.vue';
 import AvatarItem from '@/components/AvatarItem.vue'
 
 import { 
