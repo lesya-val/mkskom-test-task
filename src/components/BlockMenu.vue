@@ -47,6 +47,17 @@
 
 import MenuItem from '@/components/MenuItem.vue'
 
+import {
+	dashboard,
+	invoice,
+	files,
+	events,
+	teams,
+	massage,
+	settings,
+}
+from '@/assets/js/iconsMenu'
+
 export default {
   name: 'BlockMenu',
   components: {
@@ -54,13 +65,13 @@ export default {
   },
 	data() {
 		return {
-			dashboard: require('../assets/image/iconsMenu/dashboard.svg'),
-			invoice: require('../assets/image/iconsMenu/invoice.svg'),
-			files: require('../assets/image/iconsMenu/files.svg'),
-			events: require('../assets/image/iconsMenu/events.svg'),
-			teams: require('../assets/image/iconsMenu/teams.svg'),
-			massage: require('../assets/image/iconsMenu/massage.svg'),
-			settings: require('../assets/image/iconsMenu/settings.svg'),
+			dashboard: dashboard,
+			invoice: invoice,
+			files: files,
+			events: events,
+			teams: teams,
+			massage: massage,
+			settings: settings,
 		}
 	}
 }

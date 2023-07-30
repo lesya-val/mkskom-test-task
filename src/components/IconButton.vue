@@ -2,8 +2,9 @@
   <button 
 		class="icon-button" 
 		type="button" 
-		@click="toggleColor"
-		v-html="iconButton">
+		@click="toggleColor">
+
+		<img :src="iconButton" alt="Icon">
   </button>
 </template>
 

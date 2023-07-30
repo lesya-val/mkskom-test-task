@@ -28,7 +28,7 @@ import {
 	user,
 	ellipsis,
 } 
-from '@/assets/js/icons';
+from '@/assets/js/iconsButton';
 
 export default {
   name: 'ProfileCard',

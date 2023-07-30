@@ -16,7 +16,10 @@
 				/>
 			</div>
 			<div class="navigation__info">
-				<UserInfo :iconUser="user"/>
+				<UserInfo 
+					:iconUser="user"
+					:name="name"
+				/>
 				<div class="navigation__control-btns">
 					<IconButton
 						:iconButton="bell"
@@ -47,7 +50,7 @@ import {
 	close,
 } 
 
-from '@/assets/js/icons.js'
+from '@/assets/js/iconsButton.js'
 
 export default {
 	name: "NavigationBar",
@@ -67,6 +70,7 @@ export default {
 			bell: bell,
 			close: close,
 			currentPlaceholder: "Search Transactions and Documents",
+			name: 'Clayton Santos',
 		}
 	}
 };

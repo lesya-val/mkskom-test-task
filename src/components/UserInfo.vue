@@ -1,7 +1,9 @@
 <template>
 	<div class="user">
-		<span v-html="iconUser" />
-		<h2 class="user__name">Clayton Santos</h2>
+		<div class="user__img">
+			<img :src="iconUser" alt="User">
+		</div>
+		<h2 class="user__name">{{ name }}</h2>
 	</div>
 </template>
 
@@ -15,6 +17,10 @@ export default {
       type: String,
       required: true,
     },
+		name: {
+			type: String,
+      required: true,
+		}
   },
 };
 

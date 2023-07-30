@@ -54,8 +54,15 @@ import {
 	house,
 	plus,
 } 
+from '@/assets/js/iconsButton.js'
 
-from '@/assets/js/icons.js'
+import {
+	avatar1,
+	avatar2,
+	avatar3,
+	avatar4,
+}
+from '@/assets/js/avatarsImage'
 
 export default {
   name: 'ContentPart',
@@ -73,10 +80,10 @@ export default {
 			house: house,
 			plus: plus,
 
-			avatar1: require('../assets/image/avatars/avatar1.png'),
-			avatar2: require('../assets/image/avatars/avatar2.png'),
-			avatar3: require('../assets/image/avatars/avatar3.png'),
-			avatar4: require('../assets/image/avatars/avatar4.png'),
+			avatar1: avatar1,
+			avatar2: avatar2,
+			avatar3: avatar3,
+			avatar4: avatar4,
 		}
 	}
 }

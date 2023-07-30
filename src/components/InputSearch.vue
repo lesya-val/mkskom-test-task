@@ -1,7 +1,9 @@
 <template>
 	<div class="input-search">
 		<div class="input-search__icon-input">
-			<button v-if="iconBefore" v-html="iconBefore"></button>
+			<div v-if="iconBefore">
+				<img :src="iconBefore" alt="Icon">
+			</div>
 			<input
 				class="input-search__input"
 				type="text"
@@ -9,7 +11,9 @@
 				@input="handleInput"
 			>
 		</div>
-		<button v-if="iconAfter" v-html="iconAfter" type="submit"></button>
+		<button v-if="iconAfter" type="submit">
+			<img :src="iconAfter" alt="Icon ">
+		</button>
 	</div>
 </template>
 

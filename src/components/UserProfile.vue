@@ -16,6 +16,11 @@ import ProfileCard from '@/components/ProfileCard.vue'
 import BlockMenu from '@/components/BlockMenu.vue'
 import SocialMedia from '@/components/SocialMedia.vue'
 
+import {
+	profile
+}
+from '@/assets/js/avatarsImage'
+
 export default {
   name: 'UserPage',
   components: {
@@ -25,7 +30,7 @@ export default {
   },
 	data() {
 		return {
-			profile: require('../assets/image/profile.png'),
+			profile: profile,
 		}
 	}
 }

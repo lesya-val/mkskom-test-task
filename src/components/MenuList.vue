@@ -7,7 +7,9 @@
 			<li class="menu__item">User Policy</li>
 			<li class="menu__item">Contacts</li>
 		</ul>
-		<span v-html="ellipsisMenu" />
+		<button>
+			<img :src="ellipsisMenu" alt="Icon">
+		</button>
 	</nav>
 </template>
 
