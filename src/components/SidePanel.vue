@@ -2,39 +2,39 @@
   <aside class="side-panel">
 		<div class="side-panel__btns">
 			<IconButton
-				:iconButton="compass"
+				:icon="compass"
 			/>
 			<IconButton
-				:iconButton="star"
+				:icon="star"
 			/>
 			<IconButton
-				:iconButton="message"
+				:icon="message"
 			/>
 			<IconButton
-				:iconButton="statistics"
+				:icon="statistics"
 			/>
 			<IconButton
-				:iconButton="planet"
+				:icon="planet"
 			/>
 			<IconButton
-				:iconButton="house"
+				:icon="house"
 			/>
 		</div>
 		<div class="side-panel__avatars">
 			<AvatarItem
-				:avatarSrc="avatar1"
+				:src="avatar1"
 			/>
 			<AvatarItem
-				:avatarSrc="avatar2"
+				:src="avatar2"
 			/>
 			<AvatarItem
-				:avatarSrc="avatar3"
+				:src="avatar3"
 			/>
 			<AvatarItem
-				:avatarSrc="avatar4"
+				:src="avatar4"
 			/>
 			<IconButton
-			:iconButton="plus"
+			:icon="plus"
 		/>
 		</div>
 	</aside>
@@ -54,7 +54,7 @@ import {
 	house,
 	plus,
 } 
-from '@/assets/js/iconsButton.js'
+from '@/assets/js/icons.js'
 
 import {
 	avatar1,
@@ -62,7 +62,7 @@ import {
 	avatar3,
 	avatar4,
 }
-from '@/assets/js/avatarsImage'
+from '@/assets/js/avatars.js'
 
 export default {
   name: 'ContentPart',

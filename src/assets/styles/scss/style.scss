@@ -10,8 +10,8 @@ body {
 	font: var(--bold-bold-12, 700 12px/20px "Roboto", sans-serif);
 }
 
-#app {
-	height: 100vh;
+.icon {
+	display: flex;
 }
 
 // Стили для страниц
@@ -31,3 +31,7 @@ body {
 @import '../scss/components/BlockMenu.scss';
 @import '../scss/components/MenuItem.scss';
 @import '../scss/components/SocialMedia.scss';
+@import '../scss/components/ButtonWithUcon.scss';
+@import '../scss/components/GalleryEditor.scss';
+@import '../scss/components/IconAndTitle.scss';
+@import '../scss/components/SideBarGallery.scss';

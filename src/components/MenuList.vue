@@ -9,7 +9,7 @@
 		</ul>
 		<button>
 			<span
-				v-html="ellipsisMenu">
+				v-html="icon">
 			</span>
 		</button>
 	</nav>
@@ -20,7 +20,7 @@
 export default {
 	name: "MenuList",
 	props: {
-    ellipsisMenu: {
+    icon: {
       type: String,
       required: true,
     },

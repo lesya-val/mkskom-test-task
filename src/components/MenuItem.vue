@@ -2,7 +2,7 @@
   <div class="menu-item">
 		<div class="menu-item__icon">
 			<span
-				v-html="itemIcon">
+				v-html="icon" class="icon">
 			</span>
 		</div>
 		<h3 class="menu-item__title">{{ title }}</h3>
@@ -14,7 +14,7 @@
 export default {
   name: 'MenuItem',
 	props: {
-		itemIcon: {
+		icon: {
       type: String,
       required: true,
     },

@@ -1,7 +1,7 @@
 <template>
   <div class="icon-social">
 		<span 
-			v-html="iconSocial">
+			v-html="icon" class="icon">
 		</span>
   </div>
 </template>
@@ -11,7 +11,7 @@
 export default {
   name: 'SocialMedia',
 	props: {
-		iconSocial: {
+		icon: {
 			type: String,
 			required: true,
 		},

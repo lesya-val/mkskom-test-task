@@ -2,15 +2,15 @@
   <div class="profile-card">
     <div class="profile-card__btns">
 			<IconButton
-				:iconButton="user"
+				:icon="user"
 			/>
 			<IconButton
-				:iconButton="ellipsis"
+				:icon="ellipsis"
 			/>
 		</div>
 		<div class="profile-card__info">
 			<div class="profile-card__img">
-				<img :src="profileSrc" alt="Profile">
+				<img :src="src" alt="Profile">
 			</div>
 			<div class="profile-card__user">
 				<h2 class="profile-card__name">Hello {{ name }}</h2>
@@ -28,7 +28,7 @@ import {
 	user,
 	ellipsis,
 } 
-from '@/assets/js/iconsButton';
+from '@/assets/js/icons.js';
 
 export default {
   name: 'ProfileCard',
@@ -44,7 +44,7 @@ export default {
 		}
 	},
 	props: {
-		profileSrc: {
+		src: {
       type: String,
       required: true,
     },

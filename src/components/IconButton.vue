@@ -5,7 +5,7 @@
 		@click="toggleColor">
 
 		<span
-			v-html="iconButton">
+			v-html="icon" class="icon">
 		</span>
   </button>
 </template>
@@ -14,7 +14,7 @@
 export default {
   name: "IconButton",
   props: {
-    iconButton: {
+    icon: {
       type: String,
       required: true,
     },

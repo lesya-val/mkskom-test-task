@@ -1,9 +1,9 @@
 <template>
 	<div class="input-search">
 		<div class="input-search__icon-input">
-			<div v-if="iconBefore">
+			<div v-if="icon">
 				<span
-					v-html="iconBefore">
+					v-html="icon" class="icon">
 				</span>
 			</div>
 			<input
@@ -15,7 +15,7 @@
 		</div>
 		<button v-if="iconAfter" type="submit">
 			<span
-				v-html="iconAfter">
+				v-html="iconAfter" class="icon">
 			</span>
 		</button>
 	</div>
@@ -30,7 +30,7 @@ export default {
       type: String,
       default: "Search",
     },
-		iconBefore: {
+		icon: {
       type: String,
 			default: "",
     },

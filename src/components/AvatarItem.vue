@@ -1,6 +1,6 @@
 <template>
   <button class="avatar">
-		<img :src="avatarSrc" alt="Avatar">
+		<img :src="src" alt="Avatar">
 	</button>
 </template>
 
@@ -9,7 +9,7 @@
 export default {
   name: 'AvatarItem',
 	props: {
-		avatarSrc: {
+		src: {
       type: String,
       required: true,
     },

@@ -2,41 +2,41 @@
   <div class="block-menu">
 		<div class="block-menu__line">
 			<MenuItem
-				:itemIcon="dashboard"
+				:icon="dashboard"
 				title="Dashboard"
 			/>
 			<MenuItem
-				:itemIcon="dashboard"
+				:icon="dashboard"
 				title="Notes"
 			/>
 		</div>
 		<div class="block-menu__line">
 			<MenuItem
-				:itemIcon="invoice"
+				:icon="invoice"
 				title="Invoice"
 			/>
 			<MenuItem
-				:itemIcon="files"
+				:icon="files"
 				title="Files"
 			/>
 		</div>
 		<div class="block-menu__line">
 			<MenuItem
-				:itemIcon="events"
+				:icon="events"
 				title="Events"
 			/>
 			<MenuItem
-				:itemIcon="teams"
+				:icon="teams"
 				title="Teams"
 			/>
 		</div>
 		<div class="block-menu__line">
 			<MenuItem
-				:itemIcon="massage"
+				:icon="massage"
 				title="Massage"
 			/>
 			<MenuItem
-				:itemIcon="settings"
+				:icon="settings"
 				title="Settings"
 			/>
 		</div>
@@ -56,7 +56,7 @@ import {
 	massage,
 	settings,
 }
-from '@/assets/js/iconsMenu'
+from '@/assets/js/icons'
 
 export default {
   name: 'BlockMenu',

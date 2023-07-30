@@ -2,7 +2,7 @@
   <div class="user-profile">
 		<div class="user-profile__content">
 			<ProfileCard
-				:profileSrc="profile"
+				:src="profile"
 			/>
 			<BlockMenu/>
 		</div>
@@ -19,7 +19,7 @@ import SocialMedia from '@/components/SocialMedia.vue'
 import {
 	profile
 }
-from '@/assets/js/avatarsImage'
+from '@/assets/js/avatars.js'
 
 export default {
   name: 'UserPage',

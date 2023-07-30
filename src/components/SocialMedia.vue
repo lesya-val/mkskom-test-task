@@ -1,19 +1,19 @@
 <template>
   <div class="social-media">
 		<IconSocial
-			:iconSocial="phone"
+			:icon="phone"
 		/>
 		<IconSocial
-			:iconSocial="mail"
+			:icon="mail"
 		/>
 		<IconSocial
-			:iconSocial="reader"
+			:icon="reader"
 		/>
 		<IconSocial
-			:iconSocial="telegram"
+			:icon="telegram"
 		/>
 		<IconSocial
-			:iconSocial="whatsapp"
+			:icon="whatsapp"
 		/>
   </div>
 </template>
@@ -29,7 +29,7 @@ import {
 	telegram,
 	whatsapp,
 }
-from '@/assets/js/iconsSocial'
+from '@/assets/js/icons.js'
 
 export default {
   name: 'SocialMedia',

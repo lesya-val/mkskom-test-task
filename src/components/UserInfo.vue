@@ -2,7 +2,7 @@
 	<div class="user">
 		<div class="user__img">
 			<span
-				v-html="iconUser">
+				v-html="icon">
 			</span>
 		</div>
 		<h2 class="user__name">{{ name }}</h2>
@@ -15,7 +15,7 @@
 export default {
 	name: "NavigationUser",
 	props: {
-    iconUser: {
+    icon: {
       type: String,
       required: true,
     },

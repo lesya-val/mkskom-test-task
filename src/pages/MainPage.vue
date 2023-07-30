@@ -14,6 +14,7 @@
 import NavigationBar from '@/components/NavigationBar.vue'
 import SidePanel from '@/components/SidePanel.vue'
 import UserProfile from '@/components/UserProfile.vue'
+import GalleryEditor from '@/components/GalleryEditor.vue'
 
 
 export default {
@@ -22,6 +23,7 @@ export default {
     NavigationBar,
 		SidePanel,
 		UserProfile,
+		GalleryEditor,
   }
 }
 </script>

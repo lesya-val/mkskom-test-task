@@ -2,30 +2,30 @@
   <div class="navigation">
 		<div class="navigation__content">
 			<div class="navigation__logo">
-				<IconButton class="navigation__icon-button" :iconButton="burger"/>
+				<IconButton class="navigation__icon-button" :icon="burger"/>
 				<h1 class="navigation__title">Constructor</h1>
 			</div>
 			<MenuList
-				:ellipsisMenu="ellipsis"
+				:icon="ellipsis"
 			/>
 			<div class="navigation__input">
 				<InputSearch
 					:currentPlaceholder = currentPlaceholder
-					:iconBefore = "search"
+					:icon = "search"
 					:iconAfter="arrow"
 				/>
 			</div>
 			<div class="navigation__info">
 				<UserInfo 
-					:iconUser="user"
+					:icon="user"
 					:name="name"
 				/>
 				<div class="navigation__control-btns">
 					<IconButton
-						:iconButton="bell"
+						:icon="bell"
 					/>
 					<IconButton
-						:iconButton="close"
+						:icon="close"
 					/>
 				</div>
 			</div>
@@ -50,7 +50,7 @@ import {
 	close,
 } 
 
-from '@/assets/js/iconsButton.js'
+from '@/assets/js/icons.js'
 
 export default {
 	name: "NavigationBar",
