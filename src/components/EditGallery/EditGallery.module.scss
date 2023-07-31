@@ -1,0 +1,41 @@
+.edit-gallery {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 25px 20px 20px;
+	width: 100%;
+	border-bottom: 2px solid var(--gray-blue-grey-blue-97, #f5f6f7);
+
+	&__btns {
+		display: flex;
+		gap: 10px;
+	}
+
+	&__btn {
+		border-radius: 100px;
+		border: 2px solid var(--gray-blue-grey-blue-97, #f5f6f7);
+		padding: 6px;
+	}
+
+	&__btn--left {
+		border-radius: 100px 0px 0px 100px;
+		border-right: 1px;
+	}
+
+	&__btn--right {
+		border-radius: 0px 100px 100px 0px;
+	}
+
+	&__input {
+		border-radius: 30px;
+		border: 2px solid var(--gray-blue-grey-blue-97, #f5f6f7);
+		padding: 15px;
+		height: 40px;
+		width: 180px;
+	}
+
+	&__input input::placeholder {
+		color: var(--gray-blue-grey-blue-70, #7d8fb3);
+		font: var(--black-black-10, 900 10px/20px "Roboto", sans-serif);
+	}
+}

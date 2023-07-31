@@ -1,0 +1,12 @@
+.icon-and-title {
+  display: flex;
+  padding: 0px 20px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon-and-title__title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}

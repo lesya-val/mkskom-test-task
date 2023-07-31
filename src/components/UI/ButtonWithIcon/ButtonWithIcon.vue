@@ -1,6 +1,6 @@
 <template>
   <button :class="$style['button-with-icon']">
-    <span v-html="icon" :class="$style['icon']"></span>
+    <span v-html="icon"></span>
     <button :class="$style['button-with-icon__btn']">{{ name }}</button>
   </button>
 </template>

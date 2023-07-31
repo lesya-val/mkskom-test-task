@@ -22,10 +22,8 @@
 
 import IconButton from '@/components/UI/IconButton/IconButton.vue';
 import AvatarItem from '@/components/AvatarItem/AvatarItem.vue'
-
 import { compass, star, message, statistics, planet, house, plus, } from '@/assets/js/icons.js'
 import { avatar1, avatar2, avatar3, avatar4, } from '@/assets/js/avatars.js'
-
 import styles from '@/components/SidePanel/SidePanel.module.scss'
 
 export default {

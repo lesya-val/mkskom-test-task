@@ -19,9 +19,7 @@
 <script>
 
 import IconButton from '@/components/UI/IconButton/IconButton.vue';
-
 import { user, ellipsis, } from '@/assets/js/icons.js';
-
 import styles from '@/components/ProfileCard/ProfileCard.module.scss'
 
 export default {

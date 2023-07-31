@@ -1,6 +1,6 @@
 <template>
   <div :class="$style['icon-social']">
-    <span v-html="icon" :class="$style['icon']"></span>
+    <span v-html="icon"></span>
   </div>
 </template>
 
@@ -9,7 +9,7 @@
 import styles from '@/components/IconSocial/IconSocial.module.scss'
 
 export default {
-  name: 'SocialMedia',
+  name: 'IconSocial',
 	props: {
 		icon: {
 			type: String,

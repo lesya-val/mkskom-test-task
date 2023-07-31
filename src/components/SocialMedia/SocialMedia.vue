@@ -11,9 +11,7 @@
 <script>
 
 import IconSocial from '@/components/IconSocial/IconSocial.vue'
-
 import { phone, mail, reader, telegram, whatsapp, } from '@/assets/js/icons.js'
-
 import styles from '@/components/SocialMedia/SocialMedia.module.scss'
 
 export default {

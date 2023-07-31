@@ -24,12 +24,17 @@
 	&__input {
 		display: flex;
 		align-items: center;
+		justify-content: space-between;
 		background: var(--white-white, #ffffff);
 		border-radius: 30px ;
 		border: 2px solid var(--gray-blue-grey-blue-97, #f5f6f7);
 		padding: 20px 15px;
 		width: 430px;
 		height: 50px;
+
+		&-input input {
+			width: 250px;
+		}
 	}
 
 	&__info {

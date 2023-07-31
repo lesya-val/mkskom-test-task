@@ -1,15 +1,13 @@
 <template>
-  <button :class="$style['icon-button']" type="button">
     <span v-html="icon"></span>
-  </button>
 </template>
 
 <script>
 
-import styles from '@/components/UI/IconButton/IconButton.module.scss'
+import styles from '@/components/UI/IconItem/IconItem.module.scss'
 
 export default {
-  name: "IconButton",
+  name: "IconItem",
   props: {
     icon: {
       type: String,

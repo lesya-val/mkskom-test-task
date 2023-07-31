@@ -1,7 +1,7 @@
 <template>
   <div :class="$style['menu-item']">
     <div :class="$style['menu-item__icon']">
-      <span v-html="icon" :class="$style['icon']"></span>
+      <span v-html="icon"></span>
     </div>
     <h3 :class="$style['menu-item__title']">{{ title }}</h3>
   </div>

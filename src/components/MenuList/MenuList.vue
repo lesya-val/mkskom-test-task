@@ -8,23 +8,33 @@
       <li :class="$style['menu__item']">Contacts</li>
     </ul>
     <button>
-      <span v-html="icon" :class="$style['icon']"></span>
+      <IconItem :icon="ellipsis"/>
     </button>
   </nav>
 </template>
 
 <script>
 
+import IconItem from '@/components/UI/IconItem/IconItem.vue'
+import { ellipsis } from '@/assets/js/icons.js'
 import styles from '@/components/MenuList/MenuList.module.scss'
 
 export default {
 	name: "MenuList",
+	components: {
+		IconItem,
+	},
 	props: {
     icon: {
       type: String,
       required: true,
     },
   },
+	data() {
+		return {
+			ellipsis: ellipsis,
+		}
+	},
 	computed: {
     $style() {
       return styles;

@@ -22,10 +22,8 @@
 <script>
 
 import MenuItem from '@/components/MenuItem/MenuItem.vue'
-
-import styles from '@/components/BlockMenu/BlockMenu.module.scss'
-
 import { dashboard, invoice, files, events, teams, massage, settings, } from '@/assets/js/icons'
+import styles from '@/components/BlockMenu/BlockMenu.module.scss'
 
 export default {
   name: 'BlockMenu',

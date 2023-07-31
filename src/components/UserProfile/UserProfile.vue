@@ -13,9 +13,7 @@
 import ProfileCard from '@/components/ProfileCard/ProfileCard.vue'
 import BlockMenu from '@/components/BlockMenu/BlockMenu.vue'
 import SocialMedia from '@/components/SocialMedia/SocialMedia.vue'
-
 import { profile } from '@/assets/js/avatars.js'
-
 import styles from '@/components/UserProfile/UserProfile.module.scss'
 
 export default {

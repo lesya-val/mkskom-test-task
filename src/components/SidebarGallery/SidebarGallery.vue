@@ -47,9 +47,7 @@
 
 import ButtonWithIcon from '@/components/UI/ButtonWithIcon/ButtonWithIcon.vue'
 import IconAndTitle from '@/components/IconAndTitle/IconAndTitle.vue'
-
 import { invoice, folder, plus, label, } from '@/assets/js/icons.js'
-
 import styles from '@/components/SidebarGallery/SidebarGallery.module.scss'
 
 export default {

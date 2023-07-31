@@ -1,3 +1,7 @@
+.icon { 
+	display: flex;
+}
+
 .icon--orange svg path {
 	fill: var(--orange-orange, #FF6633);
 }

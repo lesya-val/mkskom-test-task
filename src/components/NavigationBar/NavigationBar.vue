@@ -5,16 +5,20 @@
         <IconButton :class="$style['navigation__icon-button']" :icon="burger" />
         <h1 :class="$style['navigation__title']">Constructor</h1>
       </div>
-      <MenuList :icon="ellipsis" />
+      <MenuList/>
       <div :class="$style['navigation__input']">
         <InputSearch
-          :currentPlaceholder="currentPlaceholder"
+					:class="$style['navigation__input-input']"
+          :placeholder="currentPlaceholder"
           :icon="search"
-          :iconAfter="arrow"
+					numberValidate="shouldValidate"
         />
+				<button type="submit">
+					<IconItem :icon="arrow"/>
+				</button>
       </div>
       <div :class="$style['navigation__info']">
-        <UserInfo :icon="user" :name="name" />
+        <UserInfo :name="name" />
         <div :class="$style['navigation__control-btns']">
           <IconButton :icon="bell" />
           <IconButton :icon="close" />
@@ -30,9 +34,8 @@ import IconButton from '@/components/UI/IconButton/IconButton.vue'
 import MenuList from '@/components/MenuList/MenuList.vue'
 import InputSearch from '@/components/UI/InputSearch/InputSearch.vue'
 import UserInfo from '@/components/UserInfo/UserInfo.vue'
-
-import { burger, search, arrow, ellipsis, user, bell, close, } from '@/assets/js/icons.js'
-
+import IconItem from '@/components/UI/IconItem/IconItem.vue'
+import { burger, search, arrow, bell, close, } from '@/assets/js/icons.js'
 import styles from '@/components/NavigationBar/NavigationBar.module.scss'
 
 export default {
@@ -42,18 +45,18 @@ export default {
 		MenuList,
 		InputSearch,
 		UserInfo,
+		IconItem,
 	},
 	data() {
 		return {
 			burger: burger,
 			search: search,
 			arrow: arrow,
-			ellipsis: ellipsis,
-			user: user,
 			bell: bell,
 			close: close,
 			currentPlaceholder: "Search Transactions and Documents",
 			name: 'Clayton Santos',
+			shouldValidate: true,
 		}
 	},
 	computed: {
