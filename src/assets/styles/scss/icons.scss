@@ -1,0 +1,16 @@
+.icon--orange svg path {
+	fill: var(--orange-orange, #FF6633);
+}
+
+.icon--green svg path {
+	fill: var(--green-green, #29CC39);
+}
+
+.icon--purple svg path {
+	fill: var(--purple-purple, #8833FF);
+}
+
+.icon--translucent svg path {
+	fill: var(--white-white, #ffffff);
+	fill-opacity: 0.5;
+}

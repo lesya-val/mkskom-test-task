@@ -375,7 +375,7 @@ xmlns="http://www.w3.org/2000/svg"
 
 export const folder =
 `<svg
-class="file-folder"
+class="icon"
 width="30"
 height="30"
 viewBox="0 0 30 30"
@@ -392,7 +392,7 @@ xmlns="http://www.w3.org/2000/svg"
 
 export const phone = 
 `<svg
-class="maps-local-phone"
+class="icon"
 width="30"
 height="30"
 viewBox="0 0 30 30"
@@ -409,7 +409,7 @@ xmlns="http://www.w3.org/2000/svg"
 
 export const mail = 
 `<svg
-class="content-mail"
+class="icon"
 width="30"
 height="30"
 viewBox="0 0 30 30"
@@ -426,7 +426,7 @@ xmlns="http://www.w3.org/2000/svg"
 
 export const reader = 
 `<svg
-class="action-chrome-reader-mode"
+class="icon"
 width="30"
 height="30"
 viewBox="0 0 30 30"
@@ -443,7 +443,7 @@ xmlns="http://www.w3.org/2000/svg"
 
 export const telegram = 
 `<svg
-class="social-icons-ic-telegram"
+class="icon"
 width="30"
 height="30"
 viewBox="0 0 30 30"
@@ -460,7 +460,7 @@ xmlns="http://www.w3.org/2000/svg"
 
 export const whatsapp = 
 `<svg
-class="social-icons-ic-whatsapp"
+class="icon"
 width="30"
 height="30"
 viewBox="0 0 30 30"
@@ -477,7 +477,7 @@ xmlns="http://www.w3.org/2000/svg"
 
 export const label =
 `<svg
-class="action-label"
+class="icon"
 width="30"
 height="30"
 viewBox="0 0 30 30"

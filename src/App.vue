@@ -4,7 +4,7 @@
 
 <script>
 
-import MainPage from '@/pages/MainPage.vue'
+import MainPage from '@/pages/MainPage/MainPage.vue'
 
 export default {
   name: 'App',

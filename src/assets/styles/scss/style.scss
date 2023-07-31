@@ -10,28 +10,5 @@ body {
 	font: var(--bold-bold-12, 700 12px/20px "Roboto", sans-serif);
 }
 
-.icon {
-	display: flex;
-}
-
-// Стили для страниц
-@import '../scss/pages/MainPage.scss';
-
-
-// Стили для компонентов
-@import '../scss/components/IconButton.scss';
-@import '../scss/components/InputSearch.scss';
-@import '../scss/components/NavigationBar.scss';
-@import '../scss/components/MenuList.scss';
-@import '../scss/components/UserInfo.scss';
-@import '../scss/components/SidePanel.scss';
-@import '../scss/components/AvatarItem.scss';
-@import '../scss/components/UserProfile.scss';
-@import '../scss/components/ProfileCard.scss';
-@import '../scss/components/BlockMenu.scss';
-@import '../scss/components/MenuItem.scss';
-@import '../scss/components/SocialMedia.scss';
-@import '../scss/components/ButtonWithUcon.scss';
-@import '../scss/components/GalleryEditor.scss';
-@import '../scss/components/IconAndTitle.scss';
-@import '../scss/components/SideBarGallery.scss';
+// Стили для иконок
+@import '../scss/icons.scss'	
