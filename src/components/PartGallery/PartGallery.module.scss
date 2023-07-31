@@ -10,3 +10,12 @@
 		gap: 30px;
 	}
 }
+
+.flex-gallery-container {
+	display: flex;
+}
+
+.grid-gallery-container {
+	display: grid;
+	row-gap: 0;
+}

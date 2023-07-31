@@ -2,12 +2,20 @@
   <div :class="$style['edit-gallery']">
     <div :class="$style['edit-gallery__btns']">
       <div :class="$style['edit-gallery__display']">
-        <IconButton :icon="flex" :class="[$style['edit-gallery__btn'], $style['edit-gallery__btn--left']]"/>
-        <IconButton :icon="grid" :class="[$style['edit-gallery__btn'], $style['edit-gallery__btn--right']]"/>
+        <IconButton 
+          :icon="flex" 
+          :class="[$style['edit-gallery__btn'], $style['edit-gallery__btn--left']]"
+          @click="setFlexMode"
+        />
+        <IconButton 
+          :icon="grid" 
+          :class="[$style['edit-gallery__btn'], $style['edit-gallery__btn--right']]"
+          @click="setGridMode"
+        />
       </div>
       <IconButton :icon="trash" :class="$style['edit-gallery__btn']"/>
     </div>
-    <InputSearch :icon="search" :placeholderStyle="inputSearchStyles" :class="$style['edit-gallery__input']"/>
+    <InputSearch :icon="search" :class="$style['edit-gallery__input']"/>
   </div>
 </template>
 
@@ -35,6 +43,14 @@ export default {
 	computed: {
     $style() {
       return styles;
+    },
+  },
+	methods: {
+    setFlexMode() {
+      this.$emit('setFlexMode')
+    },
+    setGridMode() {
+      this.$emit('setGridMode')
     },
   },
 };
