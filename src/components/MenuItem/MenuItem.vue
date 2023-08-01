@@ -1,5 +1,5 @@
 <template>
-  <div :class="$style['menu-item']">
+  <div :class="[$style['menu-item'], {[$style['menu-item--active']]: isActive}]" @click="handleClick">
     <div :class="$style['menu-item__icon']">
       <span v-html="icon"></span>
     </div>
@@ -22,6 +22,15 @@ export default {
 			type: String,
 			required: true,
 		},
+		isActive: {
+			type: Boolean,
+			required: true,
+		}
+	},
+	methods: {
+		handleClick() {
+			this.$emit('click')
+		}
 	},
 	computed: {
     $style() {

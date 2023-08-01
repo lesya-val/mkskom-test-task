@@ -12,6 +12,8 @@
         :src="photo.url" 
         :title="getFirstTwoWords(photo.title)"
         data="28.11.2045"
+				:isActive="photo.id === activePhoto"
+				@click="handlePhotoCard(photo.id)"
       />
     </div>
     <div v-show="!isFlexMode" :class="[$style['grid-gallery-container'], $style['part-gallery__list']]">
@@ -45,6 +47,7 @@ export default {
 		return {
 			photos: [],
 			isFlexMode: true,
+			activePhoto: null,
 		}
 	},
 	async mounted() {
@@ -94,6 +97,10 @@ export default {
       const endIndex = startIndex + columns;
       return photos.slice(startIndex, endIndex);
     },
+
+		handlePhotoCard(photoId) {
+			this.activePhoto = photoId;
+		}
 	},
 	computed: {
     $style() {

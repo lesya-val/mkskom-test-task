@@ -1,20 +1,12 @@
 <template>
   <div :class="$style['block-menu']">
-    <div :class="$style['block-menu__line']">
-      <MenuItem :icon="dashboard" title="Dashboard" />
-      <MenuItem :icon="dashboard" title="Notes" />
-    </div>
-    <div :class="$style['block-menu__line']">
-      <MenuItem :icon="invoice" title="Invoice" />
-      <MenuItem :icon="files" title="Files" />
-    </div>
-    <div :class="$style['block-menu__line']">
-      <MenuItem :icon="events" title="Events" />
-      <MenuItem :icon="teams" title="Teams" />
-    </div>
-    <div :class="$style['block-menu__line']">
-      <MenuItem :icon="massage" title="Massage" />
-      <MenuItem :icon="settings" title="Settings" />
+    <div v-for="(menuItem, index) in menuItems" :key="index" :class="$style['block-menu__line']">
+      <MenuItem 
+				:icon="menuItem.icon" 
+				:title="menuItem.title"
+				:isActive="index === activeItemIndex"
+				@click="handleMenuItem(index)"
+			/>
     </div>
   </div>
 </template>
@@ -39,6 +31,23 @@ export default {
 			teams: teams,
 			massage: massage,
 			settings: settings,
+
+			menuItems: [
+				{ icon: dashboard, title: 'Dashboard' },
+				{ icon: dashboard, title: 'Notes' },
+				{ icon: invoice, title: 'Invoice' },
+				{ icon: files, title: 'Files' },
+				{ icon: events, title: 'Events' },
+				{ icon: teams, title: 'Teams' },
+				{ icon: massage, title: 'Massage' },
+				{ icon: settings, title: 'Settings' },
+			],
+			activeItemIndex: null,
+		}
+	},
+	methods: {
+		handleMenuItem(index) {
+			this.activeItemIndex = index
 		}
 	},
 	computed: {

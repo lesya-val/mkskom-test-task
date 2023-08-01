@@ -12,6 +12,7 @@
 
 	&__img img {
 		max-height: 110px;
+		border-radius: 5px;
 	}
 
 	&__info {
@@ -29,5 +30,19 @@
 	&__data {
 		color: var(--gray-blue-grey-blue-70, #7d8fb3);
 		font: var(--black-black-10, 900 10px/20px "Roboto", sans-serif);
+	}
+
+	&--active {
+
+		.photo-card {
+			&__img {
+				border-radius: 10px;
+				border: 2px solid var(--orange-orange, #ff6633);
+			}
+
+			&__title {
+				color: var(--orange-orange, #ff6633);
+			}
+		}
 	}
 }

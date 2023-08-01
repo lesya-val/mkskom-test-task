@@ -2,7 +2,8 @@
   <div :class="$style['navigation']">
     <div :class="$style['navigation__content']">
       <div :class="$style['navigation__logo']">
-        <IconButton :class="$style['navigation__icon-button']" :icon="burger" />
+        <IconButton :class="$style['navigation__icon-button']" :icon="burger" :isActive="index === activeIcon"
+        @click="handleIconButton(index)"/>
         <h1 :class="$style['navigation__title']">Constructor</h1>
       </div>
       <MenuList/>
@@ -54,11 +55,15 @@ export default {
 			currentPlaceholder: "Search Transactions and Documents",
 			name: 'Clayton Santos',
 			shouldValidate: true,
+			activeIcon: null,
 		}
 	},
 	methods: {
 		handleSearchAlbum(albumId) {
 			this.$emit("searchAlbum", albumId);
+		},
+		handleIconButton(index) {
+			this.activeIcon = index;
 		}
 	},
 	computed: {

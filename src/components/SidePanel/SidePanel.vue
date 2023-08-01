@@ -1,18 +1,13 @@
 <template>
   <aside :class="$style['side-panel']">
     <div :class="$style['side-panel__btns']">
-      <IconButton :icon="compass" />
-      <IconButton :icon="star" />
-      <IconButton :icon="message" />
-      <IconButton :icon="statistics" />
-      <IconButton :icon="planet" />
-      <IconButton :icon="house" />
+      <IconButton v-for="(button, index) in buttons" :key="index" :icon="button.icon" 
+				:isActive="index === activeIcon"
+        @click="handleIconButton(index)"
+			/>
     </div>
     <div :class="$style['side-panel__avatars']">
-      <AvatarItem :src="avatar1" />
-      <AvatarItem :src="avatar2" />
-      <AvatarItem :src="avatar3" />
-      <AvatarItem :src="avatar4" />
+      <AvatarItem v-for="(avatar, index) in avatars" :key="index" :src="avatar.src" />
       <IconButton :icon="plus" />
     </div>
   </aside>
@@ -46,6 +41,27 @@ export default {
 			avatar2: avatar2,
 			avatar3: avatar3,
 			avatar4: avatar4,
+
+			buttons: [
+      { icon: compass },
+      { icon: star },
+      { icon: message },
+      { icon: statistics },
+      { icon: planet },
+      { icon: house },
+			],
+			avatars: [
+				{ src: avatar1 },
+				{ src: avatar2 },
+				{ src: avatar3 },
+				{ src: avatar4 },
+			],
+			activeIcon: null,
+		}
+	},
+	methods: {
+		handleIconButton(index) {
+			this.activeIcon = index;
 		}
 	},
 	computed: {

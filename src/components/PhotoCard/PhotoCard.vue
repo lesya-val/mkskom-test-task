@@ -1,5 +1,5 @@
 <template>
-  <div :class="$style['photo-card']">
+  <div :class="[$style['photo-card'], {[$style['photo-card--active']]: isActive}]" @click="handleClick">
     <div :class="$style['photo-card__img']">
       <img :src="src" alt="Photo">
     </div>
@@ -29,6 +29,15 @@ export default {
 			type : String,
 			require: true,
 		},
+		isActive: {
+			type : Boolean,
+			require: true,
+		},
+	},
+	methods: {
+		handleClick() {
+			this.$emit('click')
+		}
 	},
 	computed: {
     $style() {

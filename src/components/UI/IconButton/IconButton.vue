@@ -1,5 +1,8 @@
 <template>
-  <button :class="$style['icon-button']" type="button">
+  <button 
+		:class="[$style['icon-button'], {[$style['icon-button--active']]: isActive}]" 
+		@click="handleClick" 
+		type="button">
     <span v-html="icon"></span>
   </button>
 </template>
@@ -15,12 +18,20 @@ export default {
       type: String,
       required: true,
     },
+		isActive: {
+			type: Boolean,
+			required: true,
+		}
   },
+	methods: {
+		handleClick() {
+			this.$emit('click')
+		}
+	},
 	computed: {
     $style() {
       return styles;
     },
   },
 };
-
 </script>

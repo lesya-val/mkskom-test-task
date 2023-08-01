@@ -1,8 +1,8 @@
 .block-menu {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 242px;
 	border: 1px solid var(--gray-blue-grey-blue-95, #edeff2);
 	border-radius: 15px;
-
-	&__line {
-		display: flex;
-	}
 }
