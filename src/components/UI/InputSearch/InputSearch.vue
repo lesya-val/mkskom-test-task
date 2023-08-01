@@ -9,9 +9,12 @@
         type="text"
         :placeholder="placeholder"
         @input="handleInput"
+				v-model="inputValue"
       >
     </div>
-    
+		<button type="button" @click="handleSearch">
+			<span v-html="iconAfter"></span>
+		</button>
   </div>
 </template>
 
@@ -30,11 +33,20 @@ export default {
       type: String,
 			default: "",
     },
+		iconAfter: {
+      type: String,
+			default: "",
+    },
 		numberValidate: {
       type: Boolean,
       default: false,
     },
   },
+	data() {
+		return {
+			inputValue: ""
+		}
+	},
 	methods: {
 		handleInput(event) {
       const inputValue = event.target.value;
@@ -42,6 +54,10 @@ export default {
         event.target.value = inputValue.replace(/\D/g, "");
       }
     },
+		handleSearch() {
+			const albumId = this.inputValue;
+			this.$emit("searchAlbum", albumId);
+		}
 	},
 	computed: {
     $style() {

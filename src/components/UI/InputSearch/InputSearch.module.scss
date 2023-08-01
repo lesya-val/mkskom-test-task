@@ -2,6 +2,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	width: 100%;
 
 	&__icon-input {
 		display: flex;
@@ -12,6 +13,8 @@
 
 	&__input {
 		width: 100%;
+		color: var(--gray-blue-grey-blue-60, #6b7a99);
+		font: var(--bold-bold-13, 700 13px/25px "Roboto", sans-serif);
 	}	
 
 	&__input::placeholder {

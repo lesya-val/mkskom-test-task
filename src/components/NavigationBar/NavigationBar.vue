@@ -11,11 +11,10 @@
 					:class="$style['navigation__input-input']"
           :placeholder="currentPlaceholder"
           :icon="search"
+					:iconAfter="arrow"
 					numberValidate="shouldValidate"
+					@searchAlbum="handleSearchAlbum"
         />
-				<button type="submit">
-					<IconItem :icon="arrow"/>
-				</button>
       </div>
       <div :class="$style['navigation__info']">
         <UserInfo :name="name" />
@@ -34,7 +33,6 @@ import IconButton from '@/components/UI/IconButton/IconButton.vue'
 import MenuList from '@/components/MenuList/MenuList.vue'
 import InputSearch from '@/components/UI/InputSearch/InputSearch.vue'
 import UserInfo from '@/components/UserInfo/UserInfo.vue'
-import IconItem from '@/components/UI/IconItem/IconItem.vue'
 import { burger, search, arrow, bell, close, } from '@/assets/js/icons.js'
 import styles from '@/components/NavigationBar/NavigationBar.module.scss'
 
@@ -45,7 +43,6 @@ export default {
 		MenuList,
 		InputSearch,
 		UserInfo,
-		IconItem,
 	},
 	data() {
 		return {
@@ -57,6 +54,11 @@ export default {
 			currentPlaceholder: "Search Transactions and Documents",
 			name: 'Clayton Santos',
 			shouldValidate: true,
+		}
+	},
+	methods: {
+		handleSearchAlbum(albumId) {
+			this.$emit("searchAlbum", albumId);
 		}
 	},
 	computed: {

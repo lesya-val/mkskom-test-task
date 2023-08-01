@@ -35,6 +35,12 @@ export default {
 		PhotoCard,
 		GridRow,
 	},
+	props: {
+		albumId: {
+			type: String,
+			default: null
+		}
+	},
 	data() {
 		return {
 			photos: [],
@@ -42,24 +48,33 @@ export default {
 		}
 	},
 	async mounted() {
-    await this.getImages();
-  },
+		await this.getImages(this.albumId);
+	},
+	watch: {
+		albumId(newAlbumId) {
+			this.getImages(newAlbumId);
+		}
+	},
 	methods: {
-    async getImages() {
+    async getImages(albumId) {
+      let url = "https://jsonplaceholder.typicode.com/photos?_limit=16";
+      if (albumId) {
+        url = `https://jsonplaceholder.typicode.com/albums/${albumId}/photos?_limit=16`;
+      }
+
       try {
-        const response = await fetch('https://jsonplaceholder.typicode.com/photos?_limit=16')
-        if (!response.ok){
-          throw new Error('Network response was not ok')
+        const response = await fetch(url);
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
         }
-        const data = await response.json()
+        const data = await response.json();
         this.photos = data.map((photo) => ({
           id: photo.id,
           url: photo.url,
           title: this.getFirstTwoWords(photo.title),
         }));
-      }
-      catch (error) {
-        console.error('Error fetching photos:', error);
+      } catch (error) {
+        console.error("Error fetching photos:", error);
       }
     },
     
