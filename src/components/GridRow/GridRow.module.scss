@@ -1,4 +1,10 @@
-.grid-row-two {
+.grid-row-3 {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 15px;
+}
+
+.grid-row-2 {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	column-gap: 15px;

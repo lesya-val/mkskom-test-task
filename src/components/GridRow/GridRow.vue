@@ -1,5 +1,5 @@
 <template>
-  <div :class="$style['grid-row-two']">
+  <div :class="getRowClass">
     <PhotoCard
       :class="$style['grid-item']"
       v-for="photo in photos"
@@ -11,19 +11,23 @@
 
 <script>
 import PhotoCard from '@/components/PhotoCard/PhotoCard.vue';
-import styles from '@/components/GridRowTwo/GridRowTwo.module.scss';
+import styles from '@/components/GridRow/GridRow.module.scss';
 
 export default {
-	name: 'GridRowTwo',
+	name: 'GridRow',
   components: {
     PhotoCard,
   },
   props: {
     photos: Array,
+    columns: Number,
   },
   computed: {
     $style() {
       return styles;
+    },
+    getRowClass() {
+      return this.$style['grid-row-' + this.columns];
     },
   },
 };
