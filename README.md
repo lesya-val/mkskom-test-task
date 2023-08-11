@@ -1,4 +1,4 @@
-# Тестовое задание в компанию mkskom
+# Тестовое задание для mkskom
 ## Задание:
 Необходимо сверстать страницу и реализовать необходимый функционал на Vue 3.
 #### Макет сайта: <a href="https://www.figma.com/file/eCJ3w8LC9ewHxbxxRfQjcC/Dashboard-One-(Community)?type=design&mode=design" target="_blank">Figma</a><br>
