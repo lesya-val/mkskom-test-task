@@ -1,7 +1,0 @@
-.block-menu {
-  border: 1px solid var(--gray-blue-grey-blue-95, #edeff2);
-  border-radius: 15px;
-}
-.block-menu__line {
-  display: flex;
-}
